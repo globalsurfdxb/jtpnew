@@ -125,7 +125,7 @@ const HeroSection = () => {
         opacity: 0,
         duration: 1,
         ease: "power2.out",
-        delay: 4
+        delay: 4.2
       });
       
       // Keep the animation for other slides unchanged
@@ -143,7 +143,7 @@ const HeroSection = () => {
         duration: 0.8,
         stagger: 0.2,
         ease: "power2.out",
-        delay: 4.5
+        delay: 4.7
       });
       gsap.from('.slide:not(:first-child) .title .flex p', {
         y: 30,
