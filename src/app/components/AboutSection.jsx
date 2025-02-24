@@ -12,11 +12,10 @@ const AboutSection = () => {
   const buttonRef = useRef(null);
 
   const paragraphLines = [
-    "JT Partners JT P is an international multidisciplinary",
-    "consultant which offers a unique portfolio of",
-    "architecture, planning, engineering, project",
-    "management, infrastructure and cost consultancy",
-    "services."
+    "JT & Partners (JT+P) is an international multidisciplinary",
+    "consultant which offers a unique portfolio of architecture,",
+    "planning, engineering, project management, infrastructure",
+    "and cost consultancy services.",
   ];
 
   useEffect(() => {
@@ -27,9 +26,10 @@ const AboutSection = () => {
 
     gsap.fromTo(
       heading,
-      { y: "100%", opacity: 0 },
+      { /* y: "100%", */ x: "-10%",  opacity: 0 },
       {
-        y: 0,
+       /*  y: 0, */
+        x: 0,
         opacity: 1,
         duration: 0.8,
         ease: "power3.out",

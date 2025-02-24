@@ -16,7 +16,7 @@ const MarqueeText = () => {
           > */
           <motion.h1
           key={i}
-            className="text-[300px] font-light text-white "
+            className="text-[300px] font-light text-white leading-none"
           >
                 
          JT & Partners

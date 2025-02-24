@@ -19,23 +19,16 @@ const ArchitecturalExcellence = () => {
       id: 1,
       number: "01",
       title:
-        "    DoubleTree by Hilton – Jeddah recognised in International Award",
+        "DoubleTree by Hilton – Jeddah recognised in International Award",
       src: "/assets/img/Hero-Image-1.jpg",
     },
     {
       id: 2,
       number: "02",
       title:
-        "    DoubleTree by Hilton – Jeddah recognised in International Award",
-      src: "/assets/img/Hero-Image-1.jpg",
-    },
-    {
-      id: 3,
-      number: "03",
-      title:
-        "    DoubleTree by Hilton – Jeddah recognised in International Award",
-      src: "/assets/img/Hero-Image-1.jpg",
-    },
+        "Tawila Island Resort, Red Sea Egypt shortlisted for INDEX Design Awards 2021",
+      src: "/assets/img/Hero-Image-2.jpg",
+    }
   ];
 
   useEffect(() => {
@@ -186,8 +179,8 @@ const ArchitecturalExcellence = () => {
               </h2>
             </div>
           </div>
-          <div>
-            <h5 className="text-xl text-[#878787]">
+          <div className="overflow-hidden">
+            <h5 ref={titleRef} className="text-xl text-[#878787]">
               Awards & <br></br>Achievements
             </h5>
           </div>

@@ -12,21 +12,21 @@ const Footer = () => {
   const locations = [
     {
       name: "Abu Dhabi",
-      address: "P.O. Box 123456, Abu Dhabi, UAE",
-      office: "Office #101 - 202",
-      phone: "T 971 2 123 4567, F 971 2 765 4321",
+      address: "Madinat Zayed Tower, 2nd Floor, Muroor Road",
+      office: "Office 218 ",
+      phone: "+971 4 4521135, +971 4 4520458",
     },
     {
       name: "Dubai",
       address: "P.O. Box 413606, Business Bay - Bay Square 8",
       office: "Office #201 - 202",
-      phone: "T 971 4 452 1135, F 971 4 452 0458",
+      phone: "+971 4 4521135, +971 4 4520458",
     },
     {
       name: "Lebanon",
-      address: "P.O. Box 789101, Beirut, Lebanon",
-      office: "Office #301 - 404",
-      phone: "T 961 1 987 654, F 961 1 456 789",
+      address: "Waterfront city, Dbayeh, Colonnade Avenue,",
+      office: "Business Park, BP3, Office 302",
+      phone: "+961 4 556382",
     },
   ];
 
@@ -153,9 +153,9 @@ const Footer = () => {
               <div ref={(el) => (contactRefs.current[1] = el)}>
                 <Link
                   className="leading-none"
-                  href={"mailto:clients@jtpartners.com"}
+                  href={"mailto:info@jtpartners.com"}
                 >
-                  clients<span className="text-[#F9423A]">@</span>jtpartners.com
+                  info<span className="text-[#F9423A]">@</span>jtpartners.com
                 </Link>
               </div>
             </div>
@@ -228,6 +228,11 @@ const Footer = () => {
         </div>
       </div>
       <MarqueeText />
+      <div className="bg-[#111111] py-5 text-center mt-[50px]">
+        <div className="container">
+        <p className="text-white/70 text-[15px]">©2025 JT & Partners. All Rights Reserved</p>
+        </div>
+      </div>
     </footer>
   );
 };

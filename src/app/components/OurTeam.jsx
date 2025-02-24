@@ -112,7 +112,7 @@ const OurTeam = () => {
         </div>
         <div
           ref={teamMembersRef}
-          className="team-members flex flex-nowrap gap-0 w-[300%]"
+          className="team-members flex flex-nowrap gap-0 w-[350%]"
         >
           {teamMembers.map((member, index) => (
             <div key={index} className="text-center w-[20%]">

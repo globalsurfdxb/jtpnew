@@ -98,7 +98,7 @@ const News = () => {
                 className="items cursor-pointer border-t border-black/20 p-[40px] xxxl:p-[50px] flex justify-between items-center transition-all duration-300 relative hover:text-white before:absolute before:content-[''] before:bg-black before:inset-0 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300 before:ease-out before:-z-10"
               >
                 <h3 className="text-xl w-[60%]">
-                  Future Hospitality Summit 2025 – Dubai
+                Designed by JT+Partners, the largest Hampton by Hilton in the World has opened its doors
                 </h3>
                 <p className="w-[20%]">15-05-2025</p>
                 <Image src={plusico} alt="" width={50} height={50} className="transition-transform duration-300 hover:rotate-45" />
@@ -113,8 +113,7 @@ const News = () => {
                 className="items cursor-pointer border-t border-black/20 p-[40px] xxxl:p-[50px] flex justify-between items-center transition-all duration-300 relative hover:text-white before:absolute before:content-[''] before:bg-black before:inset-0 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300 before:ease-out before:-z-10"
               >
                 <h3 className="text-xl w-[60%]">
-                  NEOM announces Elanan, a unique wellness retreat embedded in
-                  nature
+                Joe Tabet ranked as one of the region’s leading architects and designers in Design Middle East’s Creative 30 Powerlist
                 </h3>
                 <p className="w-[20%]">15-05-2025</p>
                 <Image src={plusico} alt="" width={50} height={50} className="transition-transform duration-300 hover:rotate-45" />

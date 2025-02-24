@@ -5,6 +5,8 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
 import c01web2 from "../../../public/assets/img/c01web-2.jpg";
+import c01web3 from "../../../public/assets/img/c5-scaled.jpg";
+import c01web4 from "../../../public/assets/img/mangise.jpg";
 import MenuSec from "./MenuSec";
 
 const projects = [
@@ -12,34 +14,37 @@ const projects = [
     id: 1,
     title: "Hilton Marjan Island Beach Resort & Spa",
     title1: "Hilton Marjan Island Beach",
-    title2: "Beach Resort & Spa",
+    title2: "Resort & Spa",
     client: "MR Properties",
     type: "5 Star Hilton Hotel & Branded Residences",
     description:
       "Perched on the captivating Al Marjan Island, the Hilton 5-star hotel masterfully balances serene beach front luxury with the thrilling allure of a vibrant casino. Nestled beside the existing Hampton by Hilton Al Marjan Island, this architectural marvel offers guests and residents an unparalleled experience that fuses relaxation and entertainment.",
     image: c01web2,
+    status: "Completed",
   },
   {
     id: 2,
     title: "Hilton Marjan Island Beach Resort & Spa",
-    title1: "Hilton Marjan Island Beach",
-    title2: "Beach Resort & Spa",
-    client: "MR Properties",
-    type: "5 Star Hilton Hotel & Branded Residences",
+    title1: "Pinnacle",
+    title2: "",
+    client: "Shalimar Corp",
+    type: "Residential Tower",
     description:
-      "Perched on the captivating Al Marjan Island, the Hilton 5-star hotel masterfully balances serene beach front luxury with the thrilling allure of a vibrant casino. Nestled beside the existing Hampton by Hilton Al Marjan Island, this architectural marvel offers guests and residents an unparalleled experience that fuses relaxation and entertainment.",
-    image: c01web2,
+      "Sky-High Connections Building Community Elevated above the bustling city, a sky link gracefully connects the two towers, weaving together a series of shared spaces that float in the heavens.",
+    image: c01web3,
+    status: "Completed",
   },
   {
     id: 3,
     title: "Hilton Marjan Island Beach Resort & Spa",
-    title1: "Hilton Marjan Island Beach",
-    title2: "Beach Resort & Spa",
-    client: "MR Properties",
-    type: "5 Star Hilton Hotel & Branded Residences",
+    title1: "Mangise Golf Hotel",
+    title2: "",
+    client: "JF Ramos Investments",
+    type: "5-Star Resort & Botique Hotel ( 120 Keys)",
     description:
-      "Perched on the captivating Al Marjan Island, the Hilton 5-star hotel masterfully balances serene beach front luxury with the thrilling allure of a vibrant casino. Nestled beside the existing Hampton by Hilton Al Marjan Island, this architectural marvel offers guests and residents an unparalleled experience that fuses relaxation and entertainment.",
-    image: c01web2,
+      "This award-winning design, located in Luanda, takes inspiration from local vernacular architecture and style with the hotel units designed as African huts, using local material and creating an eco-friendly and sustaiable destination, where the guests will experience the wildlife of Angola.",
+    image: c01web4,
+    status: "Completed",
   }
 ];
 
@@ -199,7 +204,7 @@ const HeroSection = () => {
           </span>
         </div>
       </div>
-      <div className="absolute w-full bottom-[75px] z-10">
+      <div className="absolute w-full top-[100px] z-10">
         <div className="container">
           <MenuSec />
         </div>
@@ -211,7 +216,7 @@ const HeroSection = () => {
             <figure className="h-full w-full absolute -z-50">
               <Image className="h-full w-full absolute object-cover object-center" src={project.image} alt={project.title} width={2500} height={1000} />
             </figure>
-            <div className="h-full w-full -z-40 absolute bg-gradient-to-b from-black to-transparent opacity-60"></div>
+            <div className="h-full w-full -z-40 absolute bg-gradient-to-t from-black to-transparent opacity-70"></div>
             <div
               className="h-full w-full -z-40 absolute gradient-overlay"
               style={{
@@ -228,7 +233,7 @@ const HeroSection = () => {
               <div className="container h-full">
                 <div className="h-full relative">
                   <motion.div
-                    className="title pt-[90px] transition-all ease-in-out"
+                    className="title absolute bottom-[90px] transition-all ease-in-out"
 
                   >
                     <div className="overflow-hidden ">
@@ -243,14 +248,14 @@ const HeroSection = () => {
                     </div>
 
                     <div className="flex overflow-hidden gap-[10px] mt-[30px]">
-                      <p className="bg-white/30 text-[14px] p-2 rounded-full leading-none px-4 backdrop-blur-[5px]">Completed</p>
-                      <p className="bg-white/30 text-[14px] p-2 rounded-full leading-none px-3 backdrop-blur-[5px]">MR Properties</p>
+                      <p className="bg-white/30 text-[14px] p-2 rounded-full leading-none px-4 backdrop-blur-[5px]">{project.status}</p>
+                      <p className="bg-white/30 text-[14px] p-2 rounded-full leading-none px-3 backdrop-blur-[5px]">{project.client}</p>
                     </div>
                   </motion.div>
                   <div
                     className="content-box absolute w-[500px] xxl:w-[500px] xxxl:w-[550px] right-[-100%] top-[50%] translate-y-[-50%] bg-black/0"
                   >
-                    <h2 className="text-xl">{project.title}</h2>
+                    <h2 className="text-xl">{project.title1} {project.title2}</h2>
                     <div className="grid grid-cols-2 items-start mt-[80px] mb-[60px]">
                       <div>
                         <p className="text-[15px] opacity-70 mb-[15px] leading-none">CLIENT</p>

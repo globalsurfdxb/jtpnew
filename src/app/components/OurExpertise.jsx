@@ -17,21 +17,33 @@ const OurExpertise = () => {
     {
       id: 1,
       number: "01",
-      title: "Engineering",
-      description: "JT Partners Engineering division provides comprehensive consulting services across various engineering disciplines."
+      title: "Architecture",
+      description: "We provide sustainable architectural designs that promote the quality of life and create legacies for future generations. We focus on design solutions that bring harmony instead of disruption to our natural world."
     },
     {
       id: 2,
       number: "02",
-      title: "Architecture",
-      description: "JT Partners JT P is an international multidisciplinary consultant which offers a unique portfolio of architecture."
+      title: "Engineering",
+      description: "We deliver challenging projects from concept designs through to detailed design and construction supervision. Our success lies in our attention to details to produce innovative and novel engineering design solutions."
     },
     {
       id: 3,
       number: "03",
-      title: "Something",
-      description: "Our specialized Something division focuses on delivering cutting-edge solutions that combine technology."
-    }
+      title: "Interior Design",
+      description: "We create functional and sustainable interior designs that enhance, harmonise, and complement the building architecture and theme. Our interior design solutions provide enrichment, enjoyment and address the needs/requirements of our clients and the end-users."
+    },
+   /*  {
+      id: 4,
+      number: "04",
+      title: "Urban Design and Master Planning",
+      description: " We are committed to delivering environmental and socially sustainable communities with a strong sense of social cohesion and well-being that add value at both a social and urban level."
+    },
+    {
+      id: 5,
+      number: "05",
+      title: "Landscaping",
+      description: "We blend our knowledge of the environment, clients’ requirements, and guidance from planning regulations to provide designs that complement the building architecture, enhance the beauty of spaces, and encourage the social wellbeing of communities."
+    } */
   ];
 
   useEffect(() => {
@@ -66,7 +78,7 @@ const OurExpertise = () => {
     gsap.fromTo(
       contentRefs.current,
       {
-        y: 50,
+        y: '-10%',
         opacity: 0,
       },
       {
@@ -189,7 +201,7 @@ const OurExpertise = () => {
               <div className="overflow-hidden">
                 <h3
                   ref={el => contentRefs.current[0] = el}
-                  className="current-running text-[100px] xxxl:text-[120px] font-light leading-none"
+                  className="current-running text-[70px] xxxl:text-[80px] font-light leading-none"
                 >
                   {tabs.find(tab => tab.id === activeTab)?.number}
                 </h3>
@@ -199,13 +211,13 @@ const OurExpertise = () => {
                   <div className="overflow-hidden">
                     <h3
                       ref={el => contentRefs.current[1] = el}
-                      className="text-xxl mb-[60px] xxxl:mb-[80px]"
+                      className="text-xxl mb-[60px] xxxl:mb-[80px] leading-none"
                     >
                       {tabs.find(tab => tab.id === activeTab)?.title}
                     </h3>
                   </div>
-                 {/*  before:content-[''] before:absolute before:bg-gradient-to-b before:h-[30%] before:z-10 before:w-full before:from-black before:to-transparent after:content-[''] after:absolute after:bg-gradient-to-t after:h-[30%] after:z-10 after:w-full after:from-black after:to-transparent after:right-0 */}
-                 <div className="overflow-hidden">
+                 {/* */}
+                 <div className="overflow-hidden relative  before:content-[''] before:absolute before:bg-gradient-to-b before:h-[30%] before:z-10 before:w-full before:from-black/10 before:to-transparent after:content-[''] after:absolute after:bg-gradient-to-t after:h-[30%] after:z-10 after:w-full after:from-black after:to-transparent after:right-0 after:bottom-0  h-[170px]">
                   <p
                     ref={el => contentRefs.current[2] = el}
                     className="text-xl relative  w-[80%]"
