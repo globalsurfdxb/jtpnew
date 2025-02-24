@@ -73,11 +73,11 @@ html,body{
   background: rgba(100, 100, 100, 1);
 }
 .text-xxxl {
- @apply xxl:text-[110px] xxxl:text-[140px]
+ @apply text-[110px] xxxl:text-[140px]
 }
 .text-xxl {
-  @apply xxl:text-[65px] xxxl:text-[70px]
+  @apply text-[65px] xxxl:text-[70px]
 }
 .text-xl {
-  @apply xxl:text-[29px] xxxl:text-[30px]
+  @apply text-[29px] xxxl:text-[30px]
 }
