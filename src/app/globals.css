@@ -44,7 +44,7 @@ body {
   @apply font-custom text-lg text-black;
 }
 .section-padding {
-  @apply py-[80px] xl:py-[150px] xxl:py-[180px];
+  @apply py-[80px] xl:py-[100px] xxl:py-[120px] xxxl:py-[180px];
 }
 
 html,body{
@@ -71,4 +71,13 @@ html,body{
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(100, 100, 100, 1);
+}
+.text-xxxl {
+ @apply xxl:text-[110px] xxxl:text-[140px]
+}
+.text-xxl {
+  @apply xxl:text-[65px] xxxl:text-[70px]
+}
+.text-xl {
+  @apply xxl:text-[29px] xxxl:text-[30px]
 }

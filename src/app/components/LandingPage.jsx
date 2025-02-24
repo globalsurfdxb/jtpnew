@@ -43,7 +43,7 @@ const LandingPage = () => {
       {/* Video Section with Smooth Fade-Out */}
       {!hideVideo && (
         <div
-          className={`fixed inset-0 flex justify-center items-center bg-black z-50 transition-opacity duration-5000 ${
+          className={`fixed inset-0 flex justify-center items-center bg-black z-50 transition-opacity duration-5000 w-full h-full ${
             fadeOut ? "opacity-0" : "opacity-100"
           }`}
         >

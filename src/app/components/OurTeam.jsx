@@ -116,7 +116,7 @@ const OurTeam = () => {
         >
           {teamMembers.map((member, index) => (
             <div key={index} className="text-center w-[20%]">
-                <figure className='h-[450px] border-b border-black/20 mb-[50px]'>
+                <figure className='h-[380px] xxxl:h-[450px] border-b border-black/20 mb-[50px]'>
               <Image
                 src={member.image}
                 alt={member.name}

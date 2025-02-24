@@ -64,7 +64,7 @@ const News = () => {
     >
       <div className="container flex justify-end">
          <div className='w-[90%]'>
-          <div ref={titleWrapperRef} className="overflow-hidden pl-[35px] mb-[50px]">
+          <div ref={titleWrapperRef} className="overflow-hidden pl-[30px] xxxl:pl-[35px] mb-[50px]">
             <h2
               ref={titleRef}
               className="text-xxxl text-left leading-none"
@@ -79,7 +79,7 @@ const News = () => {
             >
               <div
                 ref={el => newsItemsRef.current[0] = el}
-                className="items cursor-pointer border-t border-black/20 p-[50px] flex justify-between items-start transition-all duration-300 relative hover:text-white before:absolute before:content-[''] before:bg-black before:inset-0 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300 before:ease-out before:-z-10"
+                className="items cursor-pointer border-t border-black/20 p-[40px] xxxl:p-[50px] flex justify-between items-start transition-all duration-300 relative hover:text-white before:absolute before:content-[''] before:bg-black before:inset-0 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300 before:ease-out before:-z-10"
               >
                 <h3 className="text-xl w-[60%]">
                   NEOM announces Elanan, a unique wellness retreat embedded in
@@ -95,7 +95,7 @@ const News = () => {
             >
               <div
                 ref={el => newsItemsRef.current[1] = el}
-                className="items cursor-pointer border-t border-black/20 p-[50px] flex justify-between items-center transition-all duration-300 relative hover:text-white before:absolute before:content-[''] before:bg-black before:inset-0 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300 before:ease-out before:-z-10"
+                className="items cursor-pointer border-t border-black/20 p-[40px] xxxl:p-[50px] flex justify-between items-center transition-all duration-300 relative hover:text-white before:absolute before:content-[''] before:bg-black before:inset-0 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300 before:ease-out before:-z-10"
               >
                 <h3 className="text-xl w-[60%]">
                   Future Hospitality Summit 2025 – Dubai
@@ -110,7 +110,7 @@ const News = () => {
             >
               <div
                 ref={el => newsItemsRef.current[2] = el}
-                className="items cursor-pointer border-t border-black/20 p-[50px] flex justify-between items-center transition-all duration-300 relative hover:text-white before:absolute before:content-[''] before:bg-black before:inset-0 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300 before:ease-out before:-z-10"
+                className="items cursor-pointer border-t border-black/20 p-[40px] xxxl:p-[50px] flex justify-between items-center transition-all duration-300 relative hover:text-white before:absolute before:content-[''] before:bg-black before:inset-0 before:translate-y-full hover:before:translate-y-0 before:transition-transform before:duration-300 before:ease-out before:-z-10"
               >
                 <h3 className="text-xl w-[60%]">
                   NEOM announces Elanan, a unique wellness retreat embedded in

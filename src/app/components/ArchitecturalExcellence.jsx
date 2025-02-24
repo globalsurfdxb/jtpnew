@@ -173,7 +173,7 @@ const ArchitecturalExcellence = () => {
   return (
     <section ref={sectionRef} className="section-padding">
       <div className="container">
-        <div className="flex justify-between items-end  mb-[80px]">
+        <div className="flex justify-between items-end  mb-[60px] xxxl:mb-[80px]">
           <div>
             <div className="overflow-hidden">
               <h2 ref={titleRef} className="text-xxxl text-left leading-none">
@@ -195,14 +195,14 @@ const ArchitecturalExcellence = () => {
         {/* Pinned Content Container */}
         <div ref={pinnedContentRef}>
           {/* Tabs Navigation */}
-          <div className="grid grid-cols-12 justify-end mt-[30px] mb-[80px]">
+          <div className="grid grid-cols-12 justify-end xxxl:mt-[30px] mb-[80px]">
             <div className="col-span-5"></div>
             <div className="col-span-7">
               <p className="text-[19px] mb-4">
               {String(activeTab).padStart(2, "0")} <span className="text-[#717171]">- {"0"+tabs.length}</span>
                {/*  01 <span className="text-[#717171]">- 03</span> */}
               </p>
-              <div className="flex w-full gap-[20px] mb-[80px]">
+              <div className="flex w-full gap-[20px] xxxl:mb-[80px]">
                 {tabs.map((tab) => (
                   <div
                     key={tab.id}
@@ -230,7 +230,7 @@ const ArchitecturalExcellence = () => {
           </div>
 
           {/* Content Grid */}
-          <div className="mt-10 grid grid-cols-10 gap-[200px]  justify-between">
+          <div className="mt-10 grid grid-cols-10 gap-[100px] xxxl:gap-[200px]  justify-between">
             <div className="col-span-4">
                 <figure ref={imageWrapperRef}>
               <Image
@@ -245,7 +245,7 @@ const ArchitecturalExcellence = () => {
             <div className="col-span-6">
               <div className="h-full flex flex-col">
                 <h3
-                  className="text-xxl leading-none w-[75%]"
+                  className="text-xxl leading-none xxxl:w-[75%]"
                   ref={(el) => (contentRefs.current[0] = el)}
                 >
                   {tabs.find((tab) => tab.id === activeTab)?.title}

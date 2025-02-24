@@ -228,7 +228,7 @@ const HeroSection = () => {
               <div className="container h-full">
                 <div className="h-full relative">
                   <motion.div
-                    className="title pt-[90px] w-[70%] transition-all ease-in-out"
+                    className="title pt-[90px] transition-all ease-in-out"
 
                   >
                     <div className="overflow-hidden ">
@@ -248,7 +248,7 @@ const HeroSection = () => {
                     </div>
                   </motion.div>
                   <div
-                    className="content-box absolute w-[550px] right-[-100%] top-[50%] translate-y-[-50%] bg-black/0"
+                    className="content-box absolute w-[500px] xxl:w-[500px] xxxl:w-[550px] right-[-100%] top-[50%] translate-y-[-50%] bg-black/0"
                   >
                     <h2 className="text-xl">{project.title}</h2>
                     <div className="grid grid-cols-2 items-start mt-[80px] mb-[60px]">

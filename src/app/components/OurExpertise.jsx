@@ -189,7 +189,7 @@ const OurExpertise = () => {
               <div className="overflow-hidden">
                 <h3
                   ref={el => contentRefs.current[0] = el}
-                  className="current-running text-[120px] font-light leading-none"
+                  className="current-running text-[100px] xxxl:text-[120px] font-light leading-none"
                 >
                   {tabs.find(tab => tab.id === activeTab)?.number}
                 </h3>
@@ -199,7 +199,7 @@ const OurExpertise = () => {
                   <div className="overflow-hidden">
                     <h3
                       ref={el => contentRefs.current[1] = el}
-                      className="text-xxl mb-[80px]"
+                      className="text-xxl mb-[60px] xxxl:mb-[80px]"
                     >
                       {tabs.find(tab => tab.id === activeTab)?.title}
                     </h3>
@@ -219,7 +219,7 @@ const OurExpertise = () => {
             <div>
               <figure
                 ref={imageWrapperRef}
-                className="before:content-[''] before:absolute before:bg-gradient-to-r before:h-full before:z-10 before:w-[30%] before:from-black before:to-transparent after:content-[''] after:absolute after:bg-gradient-to-l after:h-full after:z-10 after:w-[30%] after:from-black after:to-transparent after:right-0 relative w-full h-full min-h-[550px] overflow-hidden"
+                className="before:content-[''] before:absolute before:bg-gradient-to-r before:h-full before:z-10 before:w-[30%] before:from-black before:to-transparent after:content-[''] after:absolute after:bg-gradient-to-l after:h-full after:z-10 after:w-[30%] after:from-black after:to-transparent after:right-0 relative w-full h-full min-h-[500px] xxxl:min-h-[550px] overflow-hidden"
               >
                 <Image
                   ref={imageRef}

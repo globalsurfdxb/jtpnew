@@ -27,7 +27,7 @@ const tailwindConfig = {
           md: "740px",
           lg: "960px",
           xl: "1140px",
-          xxl: "1300px",
+          xxl: "1250px",
           xxxl : "1650px",
         },
       },
