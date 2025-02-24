@@ -217,10 +217,10 @@ const OurExpertise = () => {
                     </h3>
                   </div>
                  {/* */}
-                 <div className="overflow-hidden relative  before:content-[''] before:absolute before:bg-gradient-to-b before:h-[30%] before:z-10 before:w-full before:from-black/10 before:to-transparent after:content-[''] after:absolute after:bg-gradient-to-t after:h-[30%] after:z-10 after:w-full after:from-black after:to-transparent after:right-0 after:bottom-0  h-[170px]">
+                 <div className="overflow-hidden relative  before:content-[''] before:absolute before:bg-gradient-to-b before:h-[30%] before:z-10 before:w-full before:from-black/10 before:to-transparent after:content-[''] after:absolute after:bg-gradient-to-t after:h-[30%] after:z-10 after:w-full after:from-black after:to-transparent after:right-0 after:bottom-0 ">
                   <p
                     ref={el => contentRefs.current[2] = el}
-                    className="text-xl relative  w-[80%]"
+                    className="text-xl relative w-[80%] h-[180px] overflow-hidden line-clamp-4"
                   >
                     {tabs.find(tab => tab.id === activeTab)?.description}
                   </p>
