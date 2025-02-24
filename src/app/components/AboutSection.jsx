@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -105,15 +106,15 @@ const AboutSection = () => {
                 </p>
               </div>
             ))}
-             <div className="overflow-hidden">
-            <button ref={buttonRef} className="mt-6 flex items-center text-[19px] font-light transition-all duration-500 ease-in-out hover:scale-125">
+             <div className="">
+            <Link href={'#'} ref={buttonRef}  className="mt-6 flex items-center text-[19px] font-light group">
               <span className="text-2xl mr-3">
-                <Image src={'/assets/img/plusicon.svg'} alt='' width={40} height={40} />
+                <Image className='transition-all duration-500 ease-in-out group-hover:scale-125' src={'/assets/img/plusicon.svg'} alt='' width={40} height={40} />
               </span>
               <div className="overflow-hidden">
                 <span>Know More Us</span>
               </div>
-            </button>
+            </Link>
             </div>
           </div>
         </div>

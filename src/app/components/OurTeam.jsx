@@ -7,6 +7,7 @@ const OurTeam = () => {
   const titleRef = useRef(null);
   const titleWrapperRef = useRef(null);
   const teamMembersRef = useRef(null);
+  const tmitmRef = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -24,7 +25,25 @@ const OurTeam = () => {
       yPercent: 100,
       ease: "power4.out",
     });
-
+    gsap.fromTo(
+      titleWrapperRef.current,
+      {
+        x: '-10%',
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: titleWrapperRef.current,
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
     gsap.to(teamMembersRef.current, {
       x: '-70%',
       ease: "none",
@@ -37,7 +56,25 @@ const OurTeam = () => {
         // markers: true,
       }
     });
-
+    gsap.fromTo(
+      tmitmRef.current,
+      {
+        x: '-10%',
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: teamMembersRef.current,
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
     return () => {
       titleTl.kill();
       ScrollTrigger.getAll().forEach(st => st.kill());
@@ -52,8 +89,13 @@ const OurTeam = () => {
     },
     {
       name: "Joseph Damien",
-      role: "Commercial Projects Director",
+      role: "Operation & Business Development Director",
       image: "/assets/img/IMG_6473a 1.jpg", // Replace with actual image path
+    },
+    {
+      name: "Carole Akoury",
+      role: "Commercial Projects Director",
+      image: "/assets/img/Carole-Akoury 1.jpg", // Replace with actual image path
     },
     {
       name: "Ghada Tabet",
@@ -67,33 +109,18 @@ const OurTeam = () => {
     },
     {
       name: "Joseph Damien",
-      role: "Commercial Projects Director",
+      role: "Operation & Business Development Director",
       image: "/assets/img/IMG_6473a 1.jpg", // Replace with actual image path
+    },
+    {
+      name: "Carole Akoury",
+      role: "Commercial Projects Director",
+      image: "/assets/img/Carole-Akoury 1.jpg", // Replace with actual image path
     },
     {
       name: "Ghada Tabet",
       role: "HR & Admin Director",
       image: "/assets/img/Ghada-Tabet 1.jpg", // Replace with actual image path
-    },
-    {
-      name: "Joe Tabet",
-      role: "Founder & Managing Director",
-      image: "/assets/img/Joe-Tabet 1.jpg", // Replace with actual image path
-    },
-    {
-      name: "Joseph Damien",
-      role: "Commercial Projects Director",
-      image: "/assets/img/IMG_6473a 1.jpg", // Replace with actual image path
-    },
-    {
-      name: "Ghada Tabet",
-      role: "HR & Admin Director",
-      image: "/assets/img/Ghada-Tabet 1.jpg", // Replace with actual image path
-    },
-    {
-      name: "Joe Tabet",
-      role: "Founder & Managing Director",
-      image: "/assets/img/Joe-Tabet 1.jpg", // Replace with actual image path
     },
    
   
@@ -112,10 +139,10 @@ const OurTeam = () => {
         </div>
         <div
           ref={teamMembersRef}
-          className="team-members flex flex-nowrap gap-0 w-[350%]"
+          className="team-members flex flex-nowrap gap-0 w-[270%]"
         >
           {teamMembers.map((member, index) => (
-            <div key={index} className="text-center w-[20%]">
+            <div  ref={tmitmRef} key={index} className="tmitm text-center w-[20%]">
                 <figure className='h-[380px] xxxl:h-[450px] border-b border-black/20 mb-[50px]'>
               <Image
                 src={member.image}

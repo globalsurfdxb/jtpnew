@@ -71,6 +71,7 @@ const OurExpertise = () => {
       };
     }
   }, []);
+  
 
   // New effect for tab content animations
   useEffect(() => {
@@ -141,10 +142,12 @@ const OurExpertise = () => {
       titleRef.current,
       {
         y: "100%",
+        x: '-10%',
         opacity: 0
       },
       {
         y: 0,
+        x: 0,
         opacity: 1,
         duration: 1,
         ease: "power3.out",
@@ -156,6 +159,7 @@ const OurExpertise = () => {
         }
       }
     );
+   
   }, []);
 
   return (
@@ -245,7 +249,7 @@ const OurExpertise = () => {
             </div>
           </div>
           <div className="text-center mt-[50px] ">
-            <Image className="mx-auto" src={assets.plusico} width={50} height={50} alt="" />
+            <Image className="mx-auto transition-all duration-500 ease-in-out hover:scale-150 cursor-pointer" src={assets.plusico} width={50} height={50} alt="" />
           </div>
         </div>
       </div>

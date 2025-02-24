@@ -30,6 +30,25 @@ const News = () => {
         }
       }
     );
+    gsap.fromTo(
+      titleWrapperRef.current,
+      {
+        x: '-10%',
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: titleWrapperRef.current,
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
 
     // News items reveal animation
     newsItemsRef.current.forEach((item, index) => {

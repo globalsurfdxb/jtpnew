@@ -13,6 +13,7 @@ const ArchitecturalExcellence = () => {
   const imageRef = React.useRef(null);
   const titleRef = React.useRef(null);
   const titleRef2 = React.useRef(null);
+  const titleMns = React.useRef(null);
 
   const tabs = [
     {
@@ -74,6 +75,7 @@ const ArchitecturalExcellence = () => {
         stagger: 0.2,
       }
     );
+   
 
     // Animate image with right to left reveal
     gsap.fromTo(
@@ -98,7 +100,7 @@ const ArchitecturalExcellence = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     // Image reveal animation on scroll
-    gsap.fromTo(
+     gsap.fromTo(
       imageRef.current,
       {
         x: 100,
@@ -111,6 +113,25 @@ const ArchitecturalExcellence = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: imageWrapperRef.current,
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+    gsap.fromTo(
+      titleMns.current,
+      {
+        x: '-10%',
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
           start: "top center",
           end: "bottom center",
           toggleActions: "play none none reverse",
@@ -166,8 +187,8 @@ const ArchitecturalExcellence = () => {
   return (
     <section ref={sectionRef} className="section-padding">
       <div className="container">
-        <div className="flex justify-between items-end  mb-[60px] xxxl:mb-[80px]">
-          <div>
+        <div className="flex justify-between items-end  mb-[60px] xxxl:mb-[80px] overflow-hidden">
+          <div ref={titleMns}>
             <div className="overflow-hidden">
               <h2 ref={titleRef} className="text-xxxl text-left leading-none">
                 Architectural
