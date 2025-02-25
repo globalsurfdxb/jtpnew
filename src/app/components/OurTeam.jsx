@@ -105,22 +105,22 @@ const OurTeam = () => {
     {
       name: "Michelle Najm",
       role: "Associate Architect",
-      image: "/assets/img/Joe-Tabet 1.jpg", // Replace with actual image path
+      image: "/assets/img/Michelle-Najm.jpg", // Replace with actual image path
     },
     {
       name: "Gianluca Ciuffo",
       role: "Senior Design Architect",
-      image: "/assets/img/IMG_6473a 1.jpg", // Replace with actual image path
+      image: "/assets/img/IMG_0025a.jpg", // Replace with actual image path
     },
     {
       name: "Rodrigo Jr Tongohan",
       role: "Senior Architect",
-      image: "/assets/img/Carole-Akoury 1.jpg", // Replace with actual image path
+      image: "/assets/img/Rodrigo-Jr-Tongohan.jpg", // Replace with actual image path
     },
     {
       name: "Sanmita Patel",
       role: "Senior Architect",
-      image: "/assets/img/Ghada-Tabet 1.jpg", // Replace with actual image path
+      image: "/assets/img/Sanmita-Patel.jpg", // Replace with actual image path
     }
   ];
 
