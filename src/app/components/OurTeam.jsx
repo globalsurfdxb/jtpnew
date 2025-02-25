@@ -103,27 +103,25 @@ const OurTeam = () => {
       image: "/assets/img/Ghada-Tabet 1.jpg", // Replace with actual image path
     },
     {
-      name: "Joe Tabet",
-      role: "Founder & Managing Director",
+      name: "Michelle Najm",
+      role: "Associate Architect",
       image: "/assets/img/Joe-Tabet 1.jpg", // Replace with actual image path
     },
     {
-      name: "Joseph Damien",
-      role: "Operation & Business Development Director",
+      name: "Gianluca Ciuffo",
+      role: "Senior Design Architect",
       image: "/assets/img/IMG_6473a 1.jpg", // Replace with actual image path
     },
     {
-      name: "Carole Akoury",
-      role: "Commercial Projects Director",
+      name: "Rodrigo Jr Tongohan",
+      role: "Senior Architect",
       image: "/assets/img/Carole-Akoury 1.jpg", // Replace with actual image path
     },
     {
-      name: "Ghada Tabet",
-      role: "HR & Admin Director",
+      name: "Sanmita Patel",
+      role: "Senior Architect",
       image: "/assets/img/Ghada-Tabet 1.jpg", // Replace with actual image path
-    },
-   
-  
+    }
   ];
 
   return (

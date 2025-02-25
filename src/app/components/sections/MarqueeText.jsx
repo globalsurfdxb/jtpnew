@@ -7,7 +7,7 @@ const MarqueeText = () => {
       <motion.div
         className="flex min-w-max space-x-10"
         animate={{ x: ["0%", "-100%"] }} // Moves seamlessly
-        transition={{ repeat: Infinity, duration: 80, ease: "linear" }} // Increased duration for slower speed
+        transition={{ repeat: Infinity, duration: 150, ease: "linear" }} // Increased duration for slower speed
       >
     {[...Array(10)].map((_, i) => (
          /*  <motion.h1
