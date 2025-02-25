@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import {motion} from 'framer-motion'
 
 const OurTeam = () => {
   const titleRef = useRef(null);
@@ -44,6 +45,7 @@ const OurTeam = () => {
         },
       }
     );
+   
     gsap.to(teamMembersRef.current, {
       x: '-70%',
       ease: "none",
@@ -56,25 +58,7 @@ const OurTeam = () => {
         // markers: true,
       }
     });
-    gsap.fromTo(
-      tmitmRef.current,
-      {
-        x: '-10%',
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: teamMembersRef.current,
-          start: "top center",
-          end: "bottom center",
-          toggleActions: "play none none reverse",
-        },
-      }
-    );
+   
     return () => {
       titleTl.kill();
       ScrollTrigger.getAll().forEach(st => st.kill());
@@ -135,6 +119,20 @@ const OurTeam = () => {
             Meet Our Team
           </h2>
         </div>
+        <motion.div   initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }} // Trigger animation once when 50% visible
+        variants={{
+          hidden: { opacity: 0, y: 50 }, // Start below and invisible
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1, ease: "easeOut" },
+          }, // Slide up and fade in
+        }}
+      >
+
+   
         <div
           ref={teamMembersRef}
           className="team-members flex flex-nowrap gap-0 w-[270%]"
@@ -157,6 +155,7 @@ const OurTeam = () => {
             </div>
           ))}
         </div>
+        </motion.div>
       </div>
     </section>
   )

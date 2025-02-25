@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import srvc01 from "../../../public/assets/img/c03.jpg";
-import srvc02 from "../../../public/assets/img/Engineering.jpg";
+import srvc02 from "../../../public/assets/img/Engineering-2.jpg";
 import srvc03 from "../../../public/assets/img/Interior-design.jpg";
 import { assets } from "../../../public/assets/assets";
 import { gsap } from "gsap";
