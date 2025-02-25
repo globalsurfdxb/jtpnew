@@ -12,21 +12,21 @@ const Footer = () => {
   const locations = [
     {
       name: "Abu Dhabi",
-      country: "UAE",
+      title: "Abu Dhabi, UAE",
       address: "Madinat Zayed Tower, 2nd Floor, Muroor Road",
       office: "Office 218 ",
       phone: "+971 4 4521135, +971 4 4520458",
     },
     {
       name: "Dubai",
-      country: "UAE",
+      title: "Abu Dhabi, UAE",
       address: "P.O. Box 413606, Business Bay - Bay Square 8",
       office: "Office #201 - 202",
       phone: "+971 4 4521135, +971 4 4520458",
     },
     {
       name: "Lebanon",
-      country: "Beirut",
+      title: "Beirut, Lebanon",
       address: "Waterfront city, Dbayeh, Colonnade Avenue,",
       office: "Business Park, BP3, Office 302",
       phone: "+961 4 556382",
@@ -204,7 +204,7 @@ const Footer = () => {
           <div ref={locationDetailsRef} className="overflow-hidden mt-[50px]">
             <div className="text-center">
               <h2 className="text-xl font-light uppercase mb-[25px]">
-                {currentLocation.name}, {currentLocation.country}
+                {currentLocation.title}
               </h2>
               <p className="text-[#9D9D9C] text-19px">
                 {currentLocation.address}
