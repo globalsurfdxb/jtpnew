@@ -216,7 +216,7 @@ const HeroSection = () => {
             <figure className="h-full w-full absolute -z-50">
               <Image className="h-full w-full absolute object-cover object-center" src={project.image} alt={project.title} width={2500} height={1000} />
             </figure>
-            <div className="h-full w-full -z-40 absolute bg-gradient-to-t from-black to-transparent opacity-50"></div>
+            <div className="h-full w-full -z-40 absolute bg-gradient-to-t from-black to-transparent opacity-60"></div>
             <div
               className="h-full w-full -z-40 absolute gradient-overlay"
               style={{
