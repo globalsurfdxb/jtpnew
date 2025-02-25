@@ -1,15 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import HeroSection from "./HeroSection";
+import HeroSection from "./HeroSectionV2";
 import AboutSection from "./AboutSection";
 import OurExpertise from "./OurExpertise";
 import ArchitecturalExcellence from "./ArchitecturalExcellence";
 import News from "./News";
 import OurTeam from "./OurTeam";
 import Footer from "./Footer";
-
-
-const LandingPage = () => {
+import Header from "./Header";
+const LandingPageV2 = () => {
   const [hideVideo, setHideVideo] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
 
@@ -61,7 +60,7 @@ const LandingPage = () => {
 
       {/* Main Content */}
       <div>
-    
+        <Header/>
         <HeroSection />
         <AboutSection />
         <OurExpertise />
@@ -74,4 +73,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default LandingPageV2;
