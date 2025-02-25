@@ -253,7 +253,7 @@ const ArchitecturalExcellence = () => {
           {/* Content Grid */}
           <div className="mt-10 grid grid-cols-10 gap-[100px] xxxl:gap-[200px]  justify-between">
             <div className="col-span-4">
-                <figure ref={imageWrapperRef} className="h-[480px] relative">
+                <figure ref={imageWrapperRef} className="h-[450px] xxxl:h-[480px] relative">
               <Image
               className="absolute w-full h-full object-cover object-center"
                ref={imageRef}

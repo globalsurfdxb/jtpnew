@@ -85,42 +85,42 @@ const OurTeam = () => {
     {
       name: "Joe Tabet",
       role: "Founder & Managing Director",
-      image: "/assets/img/Joe-Tabet 1.jpg", // Replace with actual image path
+      image: "/assets/img/Joe-Tabet 1.jpg", 
     },
     {
       name: "Joseph Damien",
       role: "Operation & Business Development Director",
-      image: "/assets/img/IMG_6473a 1.jpg", // Replace with actual image path
+      image: "/assets/img/IMG_6473a 1.jpg", 
     },
     {
       name: "Carole Akoury",
       role: "Commercial Projects Director",
-      image: "/assets/img/Carole-Akoury 1.jpg", // Replace with actual image path
+      image: "/assets/img/Carole-Akoury 1.jpg", 
     },
     {
       name: "Ghada Tabet",
       role: "HR & Admin Director",
-      image: "/assets/img/Ghada-Tabet 1.jpg", // Replace with actual image path
+      image: "/assets/img/Ghada-Tabet 1.jpg", 
     },
     {
       name: "Michelle Najm",
       role: "Associate Architect",
-      image: "/assets/img/Michelle-Najm.jpg", // Replace with actual image path
+      image: "/assets/img/Michelle-Najm.png", 
     },
     {
       name: "Gianluca Ciuffo",
       role: "Senior Design Architect",
-      image: "/assets/img/IMG_0025a.jpg", // Replace with actual image path
+      image: "/assets/img/IMG_0025a.png", 
     },
     {
       name: "Rodrigo Jr Tongohan",
       role: "Senior Architect",
-      image: "/assets/img/Rodrigo-Jr-Tongohan.jpg", // Replace with actual image path
+      image: "/assets/img/Rodrigo-Jr-Tongohan.png", 
     },
     {
       name: "Sanmita Patel",
       role: "Senior Architect",
-      image: "/assets/img/Sanmita-Patel.jpg", // Replace with actual image path
+      image: "/assets/img/Sanmita-Patel.png", 
     }
   ];
 
