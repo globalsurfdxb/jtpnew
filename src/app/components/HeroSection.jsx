@@ -189,7 +189,7 @@ const HeroSection = () => {
       ref={triggerRef}
       suppressHydrationWarning
     >
-      <div className="absolute left-0 top-0 h-screen w-16 bg-white flex flex-col items-center justify-between py-10 border-r z-10">
+      <div className="absolute left-0 top-0 h-screen w-16 bg-white flex flex-col items-center justify-between pt-[80px] xxxl:pt-[100px] pb-[80px] border-r z-10">
         <div className="h-[200px] flex items-center">
           <span className="text-[15px] text-[#717171] tracking-widest font-light rotate-[-90deg] whitespace-nowrap font-custom">
             FEATURED PROJECTS
@@ -204,7 +204,7 @@ const HeroSection = () => {
           </span>
         </div>
       </div>
-      <div className="absolute w-full top-[100px] z-10">
+      <div className="absolute w-full top-[80px] xxxl:top-[100px] z-10">
         <div className="container">
           <MenuSec />
         </div>

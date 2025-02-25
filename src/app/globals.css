@@ -79,5 +79,5 @@ html,body{
   @apply text-[65px] xxxl:text-[70px]
 }
 .text-xl {
-  @apply text-[29px] xxxl:text-[30px]
+  @apply text-[30px] xxxl:text-[33px]
 }

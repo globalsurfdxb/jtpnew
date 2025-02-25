@@ -95,7 +95,7 @@ const AboutSection = () => {
           </h2>
         </div>
         <div className="relative z-10 text-black flex items-end flex-col">
-          <div className='w-[70%]'>
+          <div className='w-[75%] xxxl:w-[70%]'>
             {paragraphLines.map((line, index) => (
               <div key={index} className="overflow-hidden">
                 <p

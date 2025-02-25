@@ -262,8 +262,18 @@ const ArchitecturalExcellence = () => {
           </motion.div>
 
           {/* Content Grid */}
-          <div className="mt-10 grid grid-cols-10 gap-[100px] xxxl:gap-[200px]  justify-between">
-            <div className="col-span-4">
+          <motion.div className="mt-10 grid grid-cols-10 gap-[100px] xxxl:gap-[200px]  justify-between" initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }} 
+        variants={{
+          hidden: { opacity: 0, y: 50 }, 
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1, ease: "easeOut" },
+          }, 
+        }}>
+            <div className="col-span-5 xxxl:col-span-4">
                 <figure ref={imageWrapperRef} className="h-[450px] xxxl:h-[480px] relative">
               <Image
               className="absolute w-full h-full object-cover object-center"
@@ -275,7 +285,7 @@ const ArchitecturalExcellence = () => {
               />
               </figure>
             </div>
-            <div className="col-span-6">
+            <div className="col-span-5 xxxl:col-span-6">
               <div className="h-full flex flex-col">
                 <h3
                   className="text-xxl leading-none xxxl:w-[75%]"
@@ -297,7 +307,7 @@ const ArchitecturalExcellence = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
