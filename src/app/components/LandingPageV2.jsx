@@ -6,8 +6,8 @@ import OurExpertise from "./OurExpertise";
 import ArchitecturalExcellence from "./ArchitecturalExcellence";
 import News from "./News";
 import OurTeam from "./OurTeam";
-import Footer from "./Footer";
 import Header from "./Header";
+import FooterV2 from "./FooterV2";
 const LandingPageV2 = () => {
   const [hideVideo, setHideVideo] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
@@ -67,7 +67,7 @@ const LandingPageV2 = () => {
         <ArchitecturalExcellence />
         <News />
         <OurTeam />
-        <Footer />
+        <FooterV2 />
       </div>
     </div>
   );
