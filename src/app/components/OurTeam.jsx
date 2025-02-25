@@ -141,7 +141,7 @@ const OurTeam = () => {
         >
           {teamMembers.map((member, index) => (
             <div  ref={tmitmRef} key={index} className="tmitm text-center w-[20%] group">
-                <figure className='h-[380px] xxxl:h-[450px] border-b border-black/20 mb-[50px]'>
+                <figure className='h-[380px] xxxl:h-[450px] border-b border-black/20 mb-[30px] xxxl:mb-[50px]'>
               <Image
                 src={member.image}
                 alt={member.name}
@@ -152,7 +152,7 @@ const OurTeam = () => {
               </figure>
               <div className='text-start'>
             <h3 className="mb-[15px] text-xl">{member.name}</h3>
-            <p className="text-[#878787]">{member.role}</p>
+            <p className="text-[#878787] text-[16px] xxl:text-[17px] xxxl:text-[19px]">{member.role}</p>
             </div>
             </div>
           ))}
