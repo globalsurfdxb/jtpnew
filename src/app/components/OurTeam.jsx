@@ -85,22 +85,22 @@ const OurTeam = () => {
     {
       name: "Joe Tabet",
       role: "Founder & Managing Director",
-      image: "/assets/img/Joe-Tabet 1.jpg", 
+      image: "/assets/img/Joe-Tabet.png", 
     },
     {
       name: "Joseph Damien",
       role: "Operation & Business Development Director",
-      image: "/assets/img/IMG_6473a 1.jpg", 
+      image: "/assets/img/joseph.png", 
     },
     {
       name: "Carole Akoury",
       role: "Commercial Projects Director",
-      image: "/assets/img/Carole-Akoury 1.jpg", 
+      image: "/assets/img/Carole-Akoury.png", 
     },
     {
       name: "Ghada Tabet",
       role: "HR & Admin Director",
-      image: "/assets/img/Ghada-Tabet 1.jpg", 
+      image: "/assets/img/Ghada-Tabet.png", 
     },
     {
       name: "Michelle Najm",
@@ -140,14 +140,14 @@ const OurTeam = () => {
           className="team-members flex flex-nowrap gap-0 w-[270%]"
         >
           {teamMembers.map((member, index) => (
-            <div  ref={tmitmRef} key={index} className="tmitm text-center w-[20%]">
+            <div  ref={tmitmRef} key={index} className="tmitm text-center w-[20%] group">
                 <figure className='h-[380px] xxxl:h-[450px] border-b border-black/20 mb-[50px]'>
               <Image
                 src={member.image}
                 alt={member.name}
-                width={500}
+                width={600}
                 height={800}
-                className="h-full object-contain object-left"
+                className="h-full object-contain object-left grayscale group-hover:grayscale-0 transition-all ease-in-out duration-500"
               />
               </figure>
               <div className='text-start'>
