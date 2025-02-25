@@ -20,12 +20,19 @@ const ArchitecturalExcellence = () => {
       id: 1,
       number: "01",
       title:
-        "DoubleTree by Hilton – Jeddah recognised in International Award",
-      src: "/assets/img/Hero-Image-1.jpg",
+        "Award winners at the Middle East Consultant Awards 2020",
+      src: "/assets/img/award-1.jpg",
     },
     {
       id: 2,
       number: "02",
+      title:
+        "Award winners at the Architecture Leaders Awards 2021",
+      src: "/assets/img/award3.jpg",
+    },
+    {
+      id: 3,
+      number: "03",
       title:
         "Tawila Island Resort, Red Sea Egypt shortlisted for INDEX Design Awards 2021",
       src: "/assets/img/Hero-Image-2.jpg",
