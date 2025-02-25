@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import srvc01 from "../../../public/assets/img/c03.jpg";
+import srvc02 from "../../../public/assets/img/Engineering.jpg";
+import srvc03 from "../../../public/assets/img/Interior-design.jpg";
 import { assets } from "../../../public/assets/assets";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -17,18 +19,21 @@ const OurExpertise = () => {
     {
       id: 1,
       number: "01",
+      url: srvc01,
       title: "Architecture",
       description: "We provide sustainable architectural designs that promote the quality of life and create legacies for future generations. We focus on design solutions that bring harmony instead of disruption to our natural world."
     },
     {
       id: 2,
       number: "02",
+      url: srvc02,
       title: "Engineering",
       description: "We deliver challenging projects from concept designs through to detailed design and construction supervision. Our success lies in our attention to details to produce innovative and novel engineering design solutions."
     },
     {
       id: 3,
       number: "03",
+      url: srvc03,
       title: "Interior Design",
       description: "We create functional and sustainable interior designs that enhance, harmonise, and complement the building architecture and theme. Our interior design solutions provide enrichment, enjoyment and address the needs/requirements of our clients and the end-users."
     },
@@ -240,7 +245,7 @@ const OurExpertise = () => {
                 <Image
                   ref={imageRef}
                   className="w-full h-full absolute z-0 object-cover"
-                  src={srvc01}
+                  src={tabs.find(tab => tab.id === activeTab)?.url}
                   alt="service"
                   width={1000}
                   height={800}
