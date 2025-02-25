@@ -6,6 +6,7 @@ import srvc03 from "../../../public/assets/img/Interior-design.jpg";
 import { assets } from "../../../public/assets/assets";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {motion} from 'framer-motion';
 
 const OurExpertise = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -179,7 +180,17 @@ const OurExpertise = () => {
         {/* Pinned Content Container */}
         <div ref={pinnedContentRef}>
           {/* Tabs Navigation */}
-          <div className="flex-col w-full gap-[20px] mb-[80px]">
+          <motion.div className="flex-col w-full gap-[20px] mb-[80px]" initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }} 
+        variants={{
+          hidden: { opacity: 0, y: 50 }, 
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1, ease: "easeOut" },
+          }, 
+        }}>
             {tabs.map((tab) => (
               <>
                <hr className="bg-gradient-to-r from-white/40 to-transparent h-[1px] border-none"></hr>
@@ -202,10 +213,20 @@ const OurExpertise = () => {
               <hr className={`bg-gradient-to-r from-white to-transparent  border-none transition-all duration-500 ease-in-out  ${tab.id <= activeTab ? "h-[1px]" : "h-0"}`}></hr>
               </>
             ))}
-          </div>
+          </motion.div>
 
           {/* Content Grid */}
-          <div className="grid grid-cols-2">
+          <motion.div className="grid grid-cols-2" initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }} 
+        variants={{
+          hidden: { opacity: 0, y: 50 }, 
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1, ease: "easeOut" },
+          }, 
+        }}>
             <div className="h-full flex flex-col">
               <div className="overflow-hidden">
                 <h3
@@ -252,7 +273,7 @@ const OurExpertise = () => {
                 />
               </figure>
             </div>
-          </div>
+          </motion.div>
           <div className="text-center mt-[50px] ">
             <Image className="mx-auto transition-all duration-500 ease-in-out hover:scale-150 cursor-pointer" src={assets.plusico} width={50} height={50} alt="" />
           </div>

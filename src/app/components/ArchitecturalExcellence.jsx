@@ -4,6 +4,7 @@ import srvc01 from "../../../public/assets/img/c03.jpg";
 import { assets } from "../../../public/assets/assets";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {motion} from 'framer-motion'
 
 const ArchitecturalExcellence = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -216,7 +217,17 @@ const ArchitecturalExcellence = () => {
         {/* Pinned Content Container */}
         <div ref={pinnedContentRef}>
           {/* Tabs Navigation */}
-          <div className="grid grid-cols-12 justify-end xxxl:mt-[30px] mb-[80px]">
+          <motion.div className="grid grid-cols-12 justify-end xxxl:mt-[30px] mb-[80px]" initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.5 }} 
+        variants={{
+          hidden: { opacity: 0, y: 50 }, 
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1, ease: "easeOut" },
+          }, 
+        }}>
             <div className="col-span-5"></div>
             <div className="col-span-7">
               <p className="text-[19px] mb-4">
@@ -248,7 +259,7 @@ const ArchitecturalExcellence = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Content Grid */}
           <div className="mt-10 grid grid-cols-10 gap-[100px] xxxl:gap-[200px]  justify-between">
