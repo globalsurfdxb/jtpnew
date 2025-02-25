@@ -34,8 +34,8 @@ const ArchitecturalExcellence = () => {
       id: 3,
       number: "03",
       title:
-        "Tawila Island Resort, Red Sea Egypt shortlisted for INDEX Design Awards 2021",
-      src: "/assets/img/Hero-Image-2.jpg",
+        "DoubleTree by Hilton – Jeddah recognised in International Award",
+      src: "/assets/img/Hero-Image-1.jpg",
     }
   ];
 
@@ -253,13 +253,14 @@ const ArchitecturalExcellence = () => {
           {/* Content Grid */}
           <div className="mt-10 grid grid-cols-10 gap-[100px] xxxl:gap-[200px]  justify-between">
             <div className="col-span-4">
-                <figure ref={imageWrapperRef}>
+                <figure ref={imageWrapperRef} className="h-[480px] relative">
               <Image
+              className="absolute w-full h-full object-cover object-center"
                ref={imageRef}
                 src={tabs.find((tab) => tab.id === activeTab)?.src}
                 alt=""
-                width={800}
-                height={800}
+                width={1000}
+                height={1000}
               />
               </figure>
             </div>
@@ -271,9 +272,10 @@ const ArchitecturalExcellence = () => {
                 >
                   {tabs.find((tab) => tab.id === activeTab)?.title}
                 </h3>
-                <button className="mt-6 flex items-center text-[19px] font-light mt-auto  ">
+                <button className="mt-6 flex items-center text-[19px] font-light mt-auto  group">
                   <span className="text-2xl mr-3">
                     <Image
+                    className="group-hover:scale-125 transition-all duration-500 ease-in-out"
                       src={"/assets/img/plusicon.svg"}
                       alt=""
                       width={40}
