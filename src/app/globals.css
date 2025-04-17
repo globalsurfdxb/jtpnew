@@ -81,3 +81,6 @@ html,body{
 .text-xl {
   @apply text-[30px] xxxl:text-[33px]
 }
+.left-spacing {
+  @apply pl-[15px] lg:pl-[calc((100%-930px)/2)] xl:pl-[calc((100%-79rem)/2)] xxxl:pl-[calc((100%-1650px)/2)];
+}

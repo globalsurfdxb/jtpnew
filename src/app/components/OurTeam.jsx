@@ -1,10 +1,11 @@
+"use client"
 import Image from 'next/image';
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import {motion} from 'framer-motion'
 
-const OurTeam = () => {
+const ProcessTimeline = () => {
   const titleRef = useRef(null);
   const titleWrapperRef = useRef(null);
   const teamMembersRef = useRef(null);
@@ -161,4 +162,4 @@ const OurTeam = () => {
   )
 }
 
-export default OurTeam
+export default ProcessTimeline
