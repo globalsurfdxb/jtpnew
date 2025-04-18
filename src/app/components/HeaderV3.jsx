@@ -41,7 +41,7 @@ export default function HeaderV3() {
       className="header  z-10 fixed top-0 left-0 transition-all w-full"
       style={{ transform: "translateY(-100%)", opacity: 0 }}
     >
-      <div className=" flex justify-between ">
+      <div className="container flex justify-between ">
         <div>
          {/*  <Image src={logo} className="h-[45px] xxxl:h-[50px] w-auto" alt="Logo" width={300} height={100} /> */}
         </div>
